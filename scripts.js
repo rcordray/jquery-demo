@@ -11,6 +11,7 @@ $(document).ready(function() {
     $('#chief').css('color', 'green');
     $('ul').first().children().last().css('color', 'black');
     $('#kevinNewFavorite').on('click', function() {
-        $('#last3').append('<li>lightsabers</li>');
+        var favoriteThing = $('input').val();
+        $('#last3').append('<li>' + favoriteThing + '</li>');
     });
 });
