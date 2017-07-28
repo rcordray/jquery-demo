@@ -1,4 +1,5 @@
 console.log('javascript has been sourced');
+
 $(document).ready(function() {
 
 
@@ -9,7 +10,9 @@ $(document).ready(function() {
     $('.food').css('color', 'pink');
     $('#chief').css('color', 'green');
     $('ul').first().children().last().css('color', 'black');
+    var counter = 0;
     $('#kevinNewFavorite').on('click', function() {
-        console.log('button was clicked');
+        counter++;
+        console.log('button was clicked', counter, 'times');
     });
 });
