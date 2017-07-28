@@ -9,4 +9,7 @@ $(document).ready(function() {
     $('.food').css('color', 'pink');
     $('#chief').css('color', 'green');
     $('ul').first().children().last().css('color', 'black');
+    $('#kevinNewFavorite').on('click', function() {
+        console.log('button was clicked');
+    });
 });
